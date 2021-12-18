@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #cca06e;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursowa.controllers.DeleteACoffeeController">
+    <children>
+        <ImageView fitHeight="154.0" fitWidth="236.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/imgonline-com-ua-Transparent-backgr-yc9PEBrBoQCcvT.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="236.0" fitWidth="227.0" layoutX="473.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/imgonline-com-ua-Transparent-backgr-sM8daEj2LqjBeBd5.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="105.0" layoutY="156.0" prefHeight="50.0" prefWidth="526.0" text="Enter name of coffee what you want delete:">
+            <font>
+                <Font name="Book Antiqua" size="22.0" />
+            </font>
+        </Label>
+        <Button fx:id="deleteATypeOfCoffee" layoutX="204.0" layoutY="285.0" mnemonicParsing="false" style="-fx-background-color: #edd4b9;" text="Delete a coffee">
+            <font>
+                <Font name="Book Antiqua" size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="exit" layoutX="405.0" layoutY="285.0" mnemonicParsing="false" style="-fx-background-color: #edd4b9;" text="Exit">
+            <font>
+                <Font name="Book Antiqua" size="16.0" />
+            </font>
+        </Button>
+        <Label layoutX="333.0" layoutY="42.0">
+            <font>
+                <Font name="Book Antiqua" size="24.0" />
+            </font>
+        </Label>
+      <TextField fx:id="coffeeName" layoutX="108.0" layoutY="206.0" prefHeight="26.0" prefWidth="483.0" />
+    </children>
+</AnchorPane>

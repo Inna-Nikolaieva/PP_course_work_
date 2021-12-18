@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="listOfCoffee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #cca06e;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursowa.controllers.FillInTheVanController">
+    <children>
+        <Label layoutX="256.0" layoutY="32.0" prefHeight="50.0" prefWidth="167.0" text="List of coffee:">
+            <font>
+                <Font name="Book Antiqua" size="26.0" />
+            </font>
+        </Label>
+        <Button fx:id="addCoffeeInTheVan" layoutX="333.0" layoutY="455.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="57.0" style="-fx-background-color: #edd4b9;" text="Add">
+            <font>
+                <Font name="Book Antiqua" size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="exit" layoutX="404.0" layoutY="455.0" mnemonicParsing="false" style="-fx-background-color: #edd4b9;" text="Exit">
+            <font>
+                <Font name="Book Antiqua" size="16.0" />
+            </font>
+        </Button>
+        <Label layoutX="333.0" layoutY="42.0">
+            <font>
+                <Font name="Book Antiqua" size="24.0" />
+            </font>
+        </Label>
+        <TableView layoutX="40.0" layoutY="82.0" prefHeight="176.0" prefWidth="632.0" AnchorPane.bottomAnchor="242.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="82.0">
+            <columns>
+                <TableColumn prefWidth="137.59998321533203" text="Name" />
+                <TableColumn prefWidth="108.0" text="Sort" />
+                <TableColumn prefWidth="102.4000244140625" text="Type" />
+                <TableColumn prefWidth="54.39996337890625" text="Amount" />
+                <TableColumn prefWidth="58.39996337890625" text="Weight" />
+                <TableColumn prefWidth="59.999969482421875" text="Volume" />
+                <TableColumn prefWidth="112.00006103515625" text="Pack" />
+            </columns>
+        </TableView>
+      <Label layoutX="35.0" layoutY="320.0" prefHeight="49.0" prefWidth="570.0" text="Enter the name of the coffee you want to load into the van:">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="coffeeName" layoutX="40.0" layoutY="357.0" />
+      <Label layoutX="40.0" layoutY="370.0" prefHeight="50.0" prefWidth="280.0" text="Enter the number of packages:">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberOfPackages" layoutX="43.0" layoutY="419.0" />
+      <Label layoutX="40.0" layoutY="259.0" prefHeight="49.0" prefWidth="392.0" text="Enter the volume of the van:">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="volumeOfVav" layoutX="40.0" layoutY="296.0" />
+      <Label layoutX="328.0" layoutY="258.0" prefHeight="50.0" prefWidth="316.0" text="Enter the maximum amount of cargo:">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amountOfVan" layoutX="322.0" layoutY="296.0" />
+      <Button fx:id="createAVan" layoutX="193.0" layoutY="455.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: #edd4b9;" text="CREATE VAN">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
